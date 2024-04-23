@@ -1,10 +1,13 @@
 import React from 'react';
+import RecipeTitle from './RecipeTitle'
 
-function RecipeTitle() {
-    const title = 'Mashed potatoes';
+function App() {
     return (
-        <h2>{ title }</h2>
+        <article>
+            <h1>Recipe Manager</h1>
+            <RecipeTitle />
+        </article>
     )
-};
+}
 
-export default RecipeTitle;
+export default App;
