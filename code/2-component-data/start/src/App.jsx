@@ -6,6 +6,7 @@ import RecipeTitle from './RecipeTitle';
 import IngredientList from './IngredientList';
 // TODO: Import steps
 import steps from './steps';
+import Methods from './steps';
 
 
 function App() {
@@ -42,7 +43,7 @@ function App() {
             {/* TODO: Add IngredientList component */}
             <IngredientList ingredients={recipe.ingredients}/>
             {/* TODO: Add steps component */}
-            <steps steps={recipe.steps}/>
+            <Methods steps={recipe.steps}/>
         </article>
     )
 }
