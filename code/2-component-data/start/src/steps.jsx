@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './steps.css';
 function steps(props) {
     // Create the list items using map
     const steps = props.steps.map((steps, index) => {
@@ -10,11 +10,10 @@ function steps(props) {
     });
 
     // return the HTML for the component
-    // ingredientListItems will be rendered as li elements
     return (
-        <ul>
+        <ol>
             { steps }
-        </ul>
+        </ol>
     );
 }
 

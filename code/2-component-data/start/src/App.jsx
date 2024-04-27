@@ -4,6 +4,9 @@ import React from 'react';
 import RecipeTitle from './RecipeTitle';
 // TODO: Import IngredientList
 import IngredientList from './IngredientList';
+// TODO: Import steps
+import steps from './steps';
+
 
 function App() {
     // TODO: Add recipe object
@@ -38,6 +41,8 @@ function App() {
             <RecipeTitle title={recipe.title} feedback={recipe.feedback}/>
             {/* TODO: Add IngredientList component */}
             <IngredientList ingredients={recipe.ingredients}/>
+            {/* TODO: Add steps component */}
+            <steps steps={recipe.steps}/>
         </article>
     )
 }
