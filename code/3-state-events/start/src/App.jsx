@@ -24,7 +24,11 @@ function App() {
     // TODO: Add new state property
 
     // TODO: Create ingredientClick event listener
-
+    function ingredientClick(index) {
+        const updatedRecipe = { ...recipe };
+        updatedRecipe.ingredients[index].prepared = !updatedRecipe.ingredients[index].prepared;
+        setRecipe(updatedRecipe);
+    }
     // TODO: Add the effect hook
 
     return (
@@ -34,7 +38,7 @@ function App() {
             {/* TODO: Pass recipe metadata to RecipeTitle */}
             <RecipeTitle title={recipe.title} feedback={recipe.feedback} />
             {/* TODO: Pass ingredients and event listener to IngredientList */}
-
+            <IngredientList ingredients={recipe.ingredients} onClick={ingredientClick} />
             {/* TODO: Add the prep work display */}
         </article>
     )
