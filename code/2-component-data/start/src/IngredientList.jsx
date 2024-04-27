@@ -9,4 +9,11 @@ function IngredientList(props) {
           </li>
     );
 });
+return (
+  <ul>
+    {ingredientsListItems}
+  </ul>
+);
+}
 
+export default IngredientList;
